@@ -1,0 +1,23 @@
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* min-height: 90vh;*/
+ }
+
+.regalos {
+  width: 850px;
+  background-color: rgb(255, 255, 255);
+  height: 350px;
+  border-radius: 10px;
+}
+
+h2{
+    background-color: #ED6B6B;
+    color: white;
+    padding: 5px;
+    text-align: center;
+   margin-top: 20px;
+   border-radius: 10px;
+
+}

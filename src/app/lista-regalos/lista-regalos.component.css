@@ -1,0 +1,21 @@
+ol li {
+    list-style-type: none;
+    counter-increment: item;
+    margin-top: 15px;
+  }
+  
+  ol li:before {
+    content: counter(item);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #f9dd94;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+  }
