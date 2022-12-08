@@ -19,3 +19,19 @@ ol li {
     text-decoration: none;
     color: rgb(126, 126, 126);
   }
+
+  .input{
+    margin-top: 10px;
+  }
+  .col-sm-7 {
+    flex: 0 0 auto;
+    /* background-color: #e9dfe4; */
+    border: 1px solid #e2ded4 ;
+    color: rgb(126, 126, 126);
+    border-radius: 3px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+   margin-bottom: 10px;
+
+}

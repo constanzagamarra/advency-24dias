@@ -1,7 +1,49 @@
+<div class="row justify-content-center input" >
+ <div class="col-sm-6">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" 
+        name="regalo" [(ngModel)]="regaloValue"
+        placeholder="Ingrese regalos aquí" aria-label="Regalos" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button mat-raised-button color="primary" (click)="addRegalo()">Agregar</button>
+        </div>
+      </div>
+ </div>
+
+ <div class="row " *ngFor="let regalito of regalosArr">
+ 
+    <div class="col-sm-7 mat-elevation-z1"> {{regalito.nombre}} </div>
+
+    <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon"
+    
+    (click)="deleteRegalo(regalito)">
+        <mat-icon>delete</mat-icon>
+    </button>
+
+
+  </div>
+</div>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <ol>
     <li class=""><a href="#">Auriculares</a></li>
     <li class=""><a href="#">Dolares</a></li>
     <li class=""><a href="#">Sandia</a></li>
-    
 </ol>
-    
+     -->
