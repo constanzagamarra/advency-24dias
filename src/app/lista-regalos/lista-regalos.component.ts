@@ -1,6 +1,7 @@
 import { Regalos } from './../Models/regalos';
 import { ServicioService } from './../Services/servicio.service';
 import { Component, OnInit } from '@angular/core';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-lista-regalos',
@@ -12,6 +13,7 @@ export class ListaRegalosComponent implements OnInit {
   regalosArr: Regalos[]=[]
 
 regaloValue: string= '';
+regaloCanValue: number= 0;
 
   constructor(private service:ServicioService) { }
 
@@ -29,9 +31,11 @@ getRegalos() {
 
   addRegalo(){
     this.regaloObj.nombre= this.regaloValue;
+    this.regaloObj.cantidad= this.regaloCanValue;
     this.service.addRegalo(this.regaloObj).subscribe(res=>{
       this.ngOnInit();
       this.regaloValue='';
+      this.regaloCanValue= 0;
     })
     }
 
@@ -39,6 +43,12 @@ getRegalos() {
 this.service.deleteRegalo(regalito).subscribe(res=> {
   this.ngOnInit();
 })
+    }
+
+    deleteAllRegalos(){
+      this.service.deleteAllRegalo().subscribe(res=> {
+        this.ngOnInit();
+      })
     }
   }
 

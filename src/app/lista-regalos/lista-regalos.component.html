@@ -1,16 +1,21 @@
 <div class="row justify-content-center input" >
  <div class="col-sm-6">
-    <div class="input-group mb-3">
+    <div class="input-group mb-10">
         <input type="text" class="form-control" 
         name="regalo" [(ngModel)]="regaloValue"
         placeholder="Ingrese regalos aquí" aria-label="Regalos" aria-describedby="basic-addon2">
+        
+        <input type="number" class="form-control" 
+        name="regalo" [(ngModel)]="regaloCanValue"
+        placeholder="Ingrese regalos aquí" aria-label="Regalos" aria-describedby="basic-addon2" style="margin-left:3px ;">
+  
         <div class="input-group-append">
             <button mat-raised-button color="primary" (click)="addRegalo()">Agregar</button>
         </div>
-      </div>
+    </div>
  </div>
 
- <div class="row " *ngFor="let regalito of regalosArr">
+ <div class="row  " style="margin-top: 15px;" *ngFor="let regalito of regalosArr">
  
     <div class="col-sm-7 mat-elevation-z1"> {{regalito.nombre}} </div>
 
@@ -22,7 +27,12 @@
 
 
   </div>
+
+  <div *ngIf="regalosArr.length<=0">No hay regalos , agrega alguno</div>
+  <!-- <button mat-button color="accent" (click)="deleteAllRegalos()">Borrar todos</button> -->
+
 </div>
+
 
 
    

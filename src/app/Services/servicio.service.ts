@@ -27,6 +27,10 @@ deleteRegalo(regalo: Regalos):Observable<Regalos>
 {
 return this.http.delete<Regalos>(this.serviceURL+'/'+ regalo.id)
 }
+
+deleteAllRegalo():Observable<Regalos[]> {
+  return this.http.delete<Regalos[]>(this.serviceURL);
+}
 }
 
 
