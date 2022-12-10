@@ -1,3 +1,22 @@
 {
-  "regalos": []
+  "regalos": [
+    {
+      "id": 1,
+      "nombre": "Bicicleta",
+      "cantidad": 1,
+      "img": "https://images.fravega.com/f300/003622fa91d7f41086c5e372540049a4.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Auriculares",
+      "cantidad": 1,
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/c10d9aa4e9e4b9534bfebaf796b87719134fb79212be8338b414c7845b37aaf810024.jpeg"
+    },
+    {
+      "id": 3,
+      "nombre": "Batidora",
+      "cantidad": 1,
+      "img": "https://http2.mlstatic.com/D_NQ_NP_667830-MLA30991824269_062019-O.jpg"
+    }
+  ]
 }
