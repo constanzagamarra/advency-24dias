@@ -17,6 +17,12 @@
       "nombre": "Batidora",
       "cantidad": 1,
       "img": "https://http2.mlstatic.com/D_NQ_NP_667830-MLA30991824269_062019-O.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Celular",
+      "cantidad": 2,
+      "img": "https://jumboargentina.vtexassets.com/arquivos/ids/701964-800-auto?v=637889386464830000&width=800&height=auto&aspect=true"
     }
   ]
 }
