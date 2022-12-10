@@ -21,6 +21,7 @@ regaloCanValue: number= 0;
     this.regaloObj=new Regalos();
     this.regalosArr=[]
     this.getRegalos();
+    this.regaloCanValue=1;
   }
 
 getRegalos() {
@@ -35,7 +36,7 @@ getRegalos() {
     this.service.addRegalo(this.regaloObj).subscribe(res=>{
       this.ngOnInit();
       this.regaloValue='';
-      this.regaloCanValue= 0;
+      this.regaloCanValue= 1;
     })
     }
 

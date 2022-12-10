@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+
 .abs-center {
   display: flex;
   align-items: center;
@@ -10,14 +14,26 @@
   background-color: rgb(255, 255, 255);
   /* height: 350px; */
   border-radius: 10px;
+  margin-top: 20px;
+  
 }
+
+
+
 
 h2{
-    background-color: #ED6B6B;
-    color: white;
-    padding: 5px;
-    text-align: center;
-   margin-top: 20px;
-   border-radius: 10px;
+  
+  background-color: #f7da88;
+  color: white;
 
+  text-align: center;
+ height:44px;
+  padding-top: 5px;
+  padding-bottom: 5px;;
+ border-radius: 5px;
+ font-family: 'Mountains of Christmas', cursive;
+ font-size: 2rem;
 }
+
+/*  */
+

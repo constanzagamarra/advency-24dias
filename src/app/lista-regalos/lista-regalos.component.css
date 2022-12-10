@@ -1,37 +1,33 @@
-ol li {
-    list-style-type: none;
-    counter-increment: item;
-    margin-top: 15px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:ital@0;1&display=swap');
   
-  ol li:before {
-    content: counter(item);
-    margin-right: 5px;
-    font-size: 80%;
-    background-color: #f9dd94;
-    color: white;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 3px;
-  }
-
-  a{
-    text-decoration: none;
-    color: rgb(126, 126, 126);
-  }
-
+/* Varios */
   .input{
     margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
   }
-  .col-sm-7 {
-    flex: 0 0 auto;
-    /* background-color: #e9dfe4; */
-    border: 1px solid #e2ded4 ;
-    color: rgb(126, 126, 126);
-    border-radius: 3px;
-    width: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-   margin-bottom: 10px;
 
+  label{
+    color:#7e7e7e;
+    font-family: 'Nunito', sans-serif;
+  }
+
+
+  h2{
+    color: #7e7e7e;;
+  }
+
+.add{
+  margin-top: 20px;
 }
+
+
+p{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #ee452f;
+  font-weight:200 ;
+}
+
+
+
+

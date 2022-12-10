@@ -1,37 +1,63 @@
-<div class="row justify-content-center input" >
- <div class="col-sm-6">
-    <div class="input-group mb-10">
-        <input type="text" class="form-control" 
-        name="regalo" [(ngModel)]="regaloValue"
-        placeholder="Ingrese regalos aquí" aria-label="Regalos" aria-describedby="basic-addon2">
-        
-        <input type="number" class="form-control" 
-        name="regalo" [(ngModel)]="regaloCanValue"
-        placeholder="Ingrese regalos aquí" aria-label="Regalos" aria-describedby="basic-addon2" style="margin-left:3px ;">
-  
-        <div class="input-group-append">
-            <button mat-raised-button color="primary" (click)="addRegalo()">Agregar</button>
-        </div>
+<div class="row justify-content-center input" > 
+ 
+ <div class="col-sm-6" style="margin-bottom:  15px;">
+
+    <label class="control-label"  >Regalo </label>
+    <input type="text" class="form-control"  [(ngModel)]="regaloValue">
     </div>
+    <div class="col-sm-2" style="margin-bottom:  15px;">
+ 
+        <label class="control-label"  >Cantidad </label>
+        <input type="number" class="form-control"  [(ngModel)]="regaloCanValue">
+        </div>
+
+        <div class="col-sm-2">
+           
+                <button class="add" mat-raised-button style="background-color:  rgb(250, 109, 109);" color="primary" (click)="addRegalo()">Agregar</button>
+           
+        </div>
+ 
  </div>
 
- <div class="row  " style="margin-top: 15px;" *ngFor="let regalito of regalosArr">
+ <div class="row  justify-content-center " *ngFor="let regalito of regalosArr">
  
-    <div class="col-sm-7 mat-elevation-z1"> {{regalito.nombre}} </div>
+    <div class="col-sm-6 "> 
+       
+        <h3 > {{regalito.nombre}} </h3>
+        <hr> 
+    </div>
+        <div class="col-sm-1 "> 
+            <mat-icon  (click)="deleteRegalo(regalito)" style="color: rgb(250, 109, 109);">delete</mat-icon>
+            
+        </div>
 
-    <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon"
+      
+    </div>
+     
+       
+
+
+
+
+ 
     
-    (click)="deleteRegalo(regalito)">
-        <mat-icon>delete</mat-icon>
-    </button>
 
+  <div *ngIf="regalosArr.length<=0">
+    
+    <div class="row abs-center">
+        <div class="col-sm-1 abs-center">
+            <img src="./../../assets/Grinch.png " alt=”logo”  >
 
-  </div>
-
-  <div *ngIf="regalosArr.length<=0">No hay regalos , agrega alguno</div>
+        </div>
+        <div class="col-sm-7 abs-center"  >
+            <p>No hay regalos , agrega alguno.</p></div>
+     
+    </div>
+    
+    </div>
   <!-- <button mat-button color="accent" (click)="deleteAllRegalos()">Borrar todos</button> -->
 
-</div>
+
 
 
 
