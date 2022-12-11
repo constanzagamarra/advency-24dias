@@ -2,27 +2,9 @@
   "regalos": [
     {
       "id": 1,
-      "nombre": "Bicicleta",
+      "nombre": "Conejo",
       "cantidad": 1,
-      "img": "https://images.fravega.com/f300/003622fa91d7f41086c5e372540049a4.jpg"
-    },
-    {
-      "id": 2,
-      "nombre": "Auriculares",
-      "cantidad": 1,
-      "img": "https://d22fxaf9t8d39k.cloudfront.net/c10d9aa4e9e4b9534bfebaf796b87719134fb79212be8338b414c7845b37aaf810024.jpeg"
-    },
-    {
-      "id": 3,
-      "nombre": "Batidora",
-      "cantidad": 1,
-      "img": "https://http2.mlstatic.com/D_NQ_NP_667830-MLA30991824269_062019-O.jpg"
-    },
-    {
-      "id": 4,
-      "nombre": "Celular",
-      "cantidad": 2,
-      "img": "https://jumboargentina.vtexassets.com/arquivos/ids/701964-800-auto?v=637889386464830000&width=800&height=auto&aspect=true"
+      "img": "https://t2.uc.ltmcdn.com/es/posts/7/8/2/como_cuidar_un_conejo_domestico_7287_orig.jpg"
     }
   ]
 }

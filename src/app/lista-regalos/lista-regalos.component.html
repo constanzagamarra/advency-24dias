@@ -1,30 +1,11 @@
-<div class="row justify-content-center input" > 
- 
- <div class="col-sm-4" style="margin-bottom:  15px;">
-
-    <label class="control-label"  >Regalo </label>
-    <input type="text" class="form-control"  [(ngModel)]="regaloValue">
+<div class="row justify-content-end" style="margin-bottom: 10px;">
+    <div class="col-sm-2">
+        <button class="add" mat-raised-button style="background-color:  rgb(250, 109, 109);" color="primary"  >
+            <a href="#modal1"> 	  Agregar </a></button>
     </div>
+</div>
 
-    <div class="col-sm-3" style="margin-bottom:  15px;">
 
-        <label class="control-label"  >Ingrese imagen </label>
-        <input type="text" class="form-control"  [(ngModel)]="regaloURLValue">
-        </div>
-
-    <div class="col-sm-2" style="margin-bottom:  15px;">
- 
-        <label class="control-label"  >Cantidad </label>
-        <input type="number" class="form-control"  [(ngModel)]="regaloCanValue">
-        </div>
-
-        <div class="col-sm-2">
-           
-                <button class="add" mat-raised-button style="background-color:  rgb(250, 109, 109);" color="primary" (click)="addRegalo()">Agregar</button>
-           
-        </div>
- 
- </div>
 
  <div class="row  justify-content-center " *ngFor="let regalito of regalosArr">
  
@@ -79,29 +60,60 @@
     </div>
   <!-- <button mat-button color="accent" (click)="deleteAllRegalos()">Borrar todos</button> -->
 
+<!-- Modal -->
 
 
 
+<div id="modal1" class="modalmask">
+    <div class="modalbox movedown" >
+      <a href="#close" title="Close" class="close">X</a>
+     <br>
 
-   
+     <div class="row">
+        <div class="col-sm-2 ">
+            <div class="contenedor-img"  > 
+                <img src="./../../assets/regalo.png "  id="regaloimg" >
+            </div>
+          
+        </div>
+        <div class="col-sm-7  " style="display: flex; align-items: center;">
+            <h2 style="font-weight: 300; margin-left: 18px;margin-top: 20px;"> Agrega un regalo </h2>
+          
+        </div>
+        <hr> 
+      </div>
+
+    
+<div class="row">
+    <div class="col-sm-12">
+        <label class="control-label"  >Regalo </label>
+        <input type="text" class="form-control"  [(ngModel)]="regaloValue">
+    </div>
+
+    <div class="col-sm-12">
+        <label class="control-label"  >Ingrese imagen </label>
+        <input type="text" class="form-control"  [(ngModel)]="regaloURLValue">
+    </div>
+
+    <div class="col-sm-12">
+        <label class="control-label"  >Cantidad </label>
+               <input type="number" class="form-control"  [(ngModel)]="regaloCanValue">
+    </div>
+
+</div>
+
+<div class="row justify-content-end">
+    <div class="col-sm-4">
+                  
+        <a href="#close"> <button class="add" mat-raised-button style="background-color:  rgb(250, 109, 109);" color="primary" (click)="addRegalo()">Agregar</button>
+     </a> 
+  </div>
+</div>
 
 
+        </div>
 
 
+            </div>
 
-
-
-
-
-
-
-
-
-
-<!-- 
-<ol>
-    <li class=""><a href="#">Auriculares</a></li>
-    <li class=""><a href="#">Dolares</a></li>
-    <li class=""><a href="#">Sandia</a></li>
-</ol>
-     -->
+ 

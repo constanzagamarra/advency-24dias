@@ -2,6 +2,7 @@ import { Regalos } from './../Models/regalos';
 import { ServicioService } from './../Services/servicio.service';
 import { Component, OnInit } from '@angular/core';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { MatDialog } from '@angular/material/dialog';
  
 @Component({
   selector: 'app-lista-regalos',
@@ -11,11 +12,10 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class ListaRegalosComponent implements OnInit {
   regaloObj: Regalos = new Regalos();
   regalosArr: Regalos[]=[]
-
-regaloValue: string= '';
+  regaloValue: string= '';
 regaloCanValue: number= 0;
 regaloURLValue:string='';
-  constructor(private service:ServicioService ) { }
+  constructor(private service:ServicioService , private dialog: MatDialog ) { }
 
   ngOnInit(): void {
     this.regaloObj=new Regalos();
@@ -58,5 +58,8 @@ this.service.deleteRegalo(regalito).subscribe(res=> {
         this.ngOnInit();
       })
     }
+
+
+
   }
 
